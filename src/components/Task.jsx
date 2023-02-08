@@ -1,12 +1,11 @@
-import { Trash, Circle, CheckCircle, User } from 'phosphor-react'
+import { Trash, Circle, CheckCircle} from 'phosphor-react'
 import { useState } from 'react';
 
 import styles from './Task.module.css'
 
 
 
-export function Task({items, onDeleteTask,globalCount,countGlobo}) {
-console.log(`contador global : ${globalCount}`)
+export function Task({items, onDeleteTask,countGlobo}) {
 
  const [toggleChange, setToggleChange] = useState({
   status: true,
@@ -15,7 +14,6 @@ console.log(`contador global : ${globalCount}`)
 });
 
 const [checkCount, setCheckCount] = useState(0)
-console.log(`agora foi: ${checkCount}`);
 
 
 const ifFalse = {
@@ -35,8 +33,6 @@ const ifTrue = {
 function handleChecked(e){
     e.preventDefault()
 
- 
-
     switch (toggleChange.status) {
       case true:
         setToggleChange(change => change = ifFalse)
@@ -55,6 +51,7 @@ function handleChecked(e){
     }
 
 } 
+
 function handleDeleteTask(){
   console.log('deletar');
 
