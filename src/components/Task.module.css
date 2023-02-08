@@ -1,0 +1,97 @@
+    ul{
+        display: flex;
+        align-items: center;
+        height: 4.5rem;
+        width: 46rem;
+        flex-direction: column;
+        background: var(--gray-500);
+        border: 1px solid var(--gray-400);
+        border-radius: 8px;
+        margin-bottom: 1rem;
+        justify-content: space-between;
+        
+        
+    
+    }
+
+    li{
+        list-style:none;
+        word-break: break-all;
+        
+    
+       
+    }
+
+    .task{
+      
+        display: flex;
+        flex-direction: row;
+        gap: 0.7rem;
+        padding: 1rem;
+
+    }
+
+    .task p{
+        color: var(--gray-100);
+        font-size: 14px;
+
+    }
+
+    .circle {
+        color: var(--blue);
+        width: 1.094rem;
+        border-radius: 100%;
+        height: 1.094rem;
+
+    }
+
+    .trash {
+        background: transparent;
+        border: 0px;
+        color: var(--gray-300);
+        border-radius: 5px;
+        height: 1.2rem;
+
+    }
+
+
+    .trash:hover{
+      
+        background: var(--gray-400);
+        color: var(--danger);
+
+    }
+
+    .circle:hover {
+        color: var(--blueDark);
+        width: 1.094rem;
+        border-radius: 100%;
+        height: 1.094rem;
+        background: rgba(30, 111, 159, 0.4);
+    }
+
+    .sublimeText{
+        text-decoration: line-through;
+        color: var(--gray-300);
+    }
+
+    .sublimeText p{
+        color: var(--gray-300);
+    }
+
+    .sublimeTextNone{
+        text-decoration: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+

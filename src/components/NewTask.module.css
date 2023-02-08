@@ -1,0 +1,44 @@
+.newTask{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -1rem;
+    gap:0.5rem;
+    
+}
+
+.newTask input, button{
+    height: 3.375rem;
+    border-radius: 8px;
+    border: none;
+}
+
+.newTask input{
+   
+    box-sizing: border-box;
+    width: 39.875rem;
+    background: var(--gray-500);
+    color: var(--gray-100);
+    padding-left: 1rem;
+}
+
+
+.newTask button{ 
+    color: var(--gray-100);
+    background: var(--blueDark);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 5.625rem;
+    gap: 0.5rem;
+    transition: 0.8s;
+}
+
+
+button:hover {
+    background-color: var(--blue);
+    color: var(--gray-100);
+    
+  }
+
+

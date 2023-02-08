@@ -1,0 +1,18 @@
+.empty{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 15.25rem;
+    width: 46rem;
+    border-radius: 20px;
+    border-top: 1px solid var(--gray-400);
+}
+
+.empty img{
+    margin-bottom: 1rem;
+}
+
+.empty strong{
+    margin-bottom: 0.2rem;
+}
